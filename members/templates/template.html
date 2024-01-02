@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html>
+  <body> -->
+<!-- {% if greeting == 1 and day == 'friday' or greeting == 5 %}
+    <h1>Hello</h1>
+    {% elif greeting == 2 %}
+    <h2>World</h2>
+    {% else %}
+    <h1>Bye</h1>
+    {% endif %} -->
+<!-- {% if 'Banana' in fruits %}
+    <h1>Hello Banana</h1>
+    {% else %}
+    <h1>Goodbye</h1>
+    {% endif %} -->
+
+<!-- {% if 'Banana' not in fruits %}
+    <h1>Hello not in banana</h1>
+    {% else %}
+    <h1>Goodbye</h1>
+    {% endif %} -->
+<!-- <p>In views.py you can see what the greeting variable looks like.</p> -->
+
+<!-- {% if x is y %}
+    <h1>Hello</h1>
+    {% else %}
+    <h1>World</h1>
+    {% endif %} -->
+<!-- {% if x == y %}
+    <h1>Hello</h1>
+    {% else %}
+    <h1>World</h1>
+    {% endif %} -->
+<!-- {% with var1=x var2=x %} {% if var1 is var2 %}
+    <h1>YES</h1>
+    {% else %}
+    <h1>NO</h1>
+    {% endif %} {% endwith %} -->
+<!-- {% for y in x %}
+    <h1>{{y}}</h1>
+    {%endfor%} -->
+<!-- {% for x in cars %}
+    <h1>{{x.brand}}</h1>
+    <p>{{x.model}}</p>
+    {%endfor%} -->
+<!-- <h1>Welcome Everyone</h1>
+    {% comment "this is a book" %}
+    <h1>Welcome ladies and gentlemen</h1>
+
+    {% endcomment %}
+    <h2>Welcome {#to all#}</h2>
+  </body>
+</html> -->
+<!-- {% with firstname="Tobias" %}
+<h1>Hello {{firstname}}, how are you?</h1>
+{% endwith %} -->
+
+<!-- <ul>
+  {% for x in mymembers %}
+  <li>{{x.firstname}}</li>
+  {%endfor%}
+</ul> -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{% static 'myglobal.css' %}"
+  <body>
+    <table border="1">
+      {% for x in mymembers %}
+      <tr>
+        <td>{{ x }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
